@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7680C222-3FE0-35F9-B881-A3E40172C642}</ProjectGuid>
+    <RootNamespace>CHOWTAIFOOK_Detection</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <ProjectName>CHOWTAIFOOK_Detection</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\obj\</IntermediateDirectory>
+    <PrimaryOutput>CHOWTAIFOOK_Detection</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\obj\</IntermediateDirectory>
+    <PrimaryOutput>CHOWTAIFOOK_Detection</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>debug\bin\</OutDir>
+    <IntDir>debug\obj\</IntDir>
+    <TargetName>CHOWTAIFOOK_Detection</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>release\bin\</OutDir>
+    <IntDir>release\obj\</IntDir>
+    <TargetName>CHOWTAIFOOK_Detection</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <LibraryPath>..\lib\dalsa\release;..\lib\opencv\release;..\lib\SerialPort;..\lib\Network;..\lib\Xml;..\lib\zip;..\lib\Hik;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>5.14.1_msvc2017_64</QtInstall>
+    <QtModules>core;sql;gui;widgets;serialbus</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;serialbus;sql;widgets;xml</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\include;..\include\opencv;..\include\spdlog;..\include\camera;..\include\teledyne;..\lib\dalsa\release;..\lib\opencv\release;release\moc;/include;..\include\Hik;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_DEPRECATED_WARNINGS;DALSACAMERALINK;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opencv_world420.lib;shell32.lib;Qt5SerialPort.lib;Qt5Network.lib;MvCameraControl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Code\scc-mvi-industrial-application\lib\camera\release;E:\Code\scc-mvi-industrial-application\lib\dalsa\release;E:\Code\scc-mvi-industrial-application\lib\libjpeg-turbo;E:\Code\scc-mvi-industrial-application\lib\grpc;E:\Code\scc-mvi-industrial-application\lib\opencv\release;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;D:\SMore\smartmore\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\CHOWTAIFOOK_Detection.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_DEPRECATED_WARNINGS;DALSACAMERALINK;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_SERIALBUS_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /Y .\install_release.bat .\release\bin\ &amp;&amp; cd .\release\bin\ &amp;&amp; call install_release.bat</Command>
+      <Message>copy /Y .\install_release.bat .\release\bin\ &amp;&amp; cd .\release\bin\ &amp;&amp; call install_release.bat</Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\$(Configuration)\moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>CHOWTAIFOOK_Detection</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\$(Configuration)\rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\include;..\include\opencv;..\include\spdlog;..\include\camera;..\include\libjpeg-turbo;..\include\dalsa;debug\moc;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;DALSACAMERALINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dalsacclinkd.lib;E:\Code\scc-mvi-industrial-application\lib\opencv\debug\opencv_world420d.lib;dbghelp.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Code\scc-mvi-industrial-application\lib\camera\debug;E:\Code\scc-mvi-industrial-application\lib\dalsa\debug;E:\Code\scc-mvi-industrial-application\lib\opencv\debug;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\CHOWTAIFOOK_Detection.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;DALSACAMERALINK;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_SERIALBUS_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /Y .\install_debug.bat .\debug\bin\ &amp;&amp; cd .\debug\bin\ &amp;&amp; call install_debug.bat</Command>
+      <Message>copy /Y .\install_debug.bat .\debug\bin\ &amp;&amp; cd .\debug\bin\ &amp;&amp; call install_debug.bat</Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\$(Configuration)\moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>CHOWTAIFOOK_Detection</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\$(Configuration)\rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cameraservice\hikvisionsdk.cpp" />
+    <ClCompile Include="communication\mcplc.cpp" />
+    <ClCompile Include="communication\readcode.cpp" />
+    <ClCompile Include="communication\stripprocessor.cpp" />
+    <ClCompile Include="Flow\serialcommond.cpp" />
+    <ClCompile Include="uiframe\commonuiset\imagegraphics\imagegraphicsitem.cpp" />
+    <ClCompile Include="uiframe\commonuiset\imagegraphics\imagegraphicsscene.cpp" />
+    <ClCompile Include="uiframe\commonuiset\imagegraphics\imagegraphicsview.cpp" />
+    <ClCompile Include="uiframe\commonuiset\messagedialog\messagedialog.cpp" />
+    <ClCompile Include="uiframe\commonuiset\messagedialog\messagedialogtitlebar.cpp" />
+    <ClCompile Include="uiframe\commonuiset\messagedialog\progressbardialog.cpp" />
+    <ClCompile Include="uiframe\commonuiset\table\tablemodel.cpp" />
+    <ClCompile Include="uiframe\commonuiset\table\tablewidget.cpp" />
+    <ClCompile Include="uiframe\configuiset\adminlogindialog.cpp" />
+    <ClCompile Include="uiframe\configuiset\configdialog.cpp" />
+    <ClCompile Include="uiframe\configuiset\configtitlebar.cpp" />
+    <ClCompile Include="uiframe\configuiset\logdialog.cpp" />
+    <ClCompile Include="uiframe\configuiset\camsetdialog.cpp" />
+    <ClCompile Include="uiframe\configuiset\stereoscopicdialog.cpp" />
+    <ClCompile Include="uiframe\configuiset\passworddialog.cpp" />
+    <ClCompile Include="uiframe\mainuiset\aboutdialog.cpp" />
+    <ClCompile Include="uiframe\mainuiset\buttonwidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\datawidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\imageviews\sixviewswidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\imageviews\imageview.cpp" />
+    <ClCompile Include="uiframe\mainuiset\imageviews\viewtoolbar.cpp" />
+    <ClCompile Include="uiframe\mainuiset\logwidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\infowidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\mainframe.cpp" />
+    <ClCompile Include="uiframe\mainuiset\resultwidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\singleviewwidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\statisticswidget.cpp" />
+    <ClCompile Include="uiframe\mainuiset\titlebarwidget.cpp" />
+    <ClCompile Include="vimocommon\applogger.cpp" />
+    <ClCompile Include="logservice\logservice.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="vimocommon\vimocommon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="communication\mcplc.h" />
+    <QtMoc Include="communication\readcode.h" />
+    <QtMoc Include="communication\stripprocessor.h" />
+    <QtMoc Include="Flow\serialcommond.h" />
+    <QtMoc Include="cameraservice\hikvisionsdk.h" />
+    <ClInclude Include="serializer\AdminConfig.h" />
+    <ClInclude Include="serializer\Config.h" />
+    <QtMoc Include="uiframe\mainuiset\aboutdialog.h" />
+    <QtMoc Include="uiframe\mainuiset\buttonwidget.h" />
+    <QtMoc Include="uiframe\mainuiset\logwidget.h" />
+    <QtMoc Include="uiframe\mainuiset\mainframe.h" />
+    <QtMoc Include="uiframe\mainuiset\statisticswidget.h" />
+    <QtMoc Include="uiframe\mainuiset\titlebarwidget.h" />
+    <QtMoc Include="uiframe\mainuiset\imageviews\imageview.h" />
+    <QtMoc Include="uiframe\mainuiset\imageviews\viewtoolbar.h" />
+    <QtMoc Include="uiframe\commonuiset\messagedialog\messagedialog.h" />
+    <QtMoc Include="uiframe\commonuiset\messagedialog\messagedialogtitlebar.h" />
+    <ClInclude Include="uiframe\commonuiset\imagegraphics\imagegraphicsitem.h" />
+    <ClInclude Include="uiframe\commonuiset\imagegraphics\imagegraphicsscene.h" />
+    <QtMoc Include="uiframe\commonuiset\imagegraphics\imagegraphicsview.h" />
+    <QtMoc Include="uiframe\commonuiset\messagedialog\progressbardialog.h" />
+    <ClInclude Include="uiframe\commonuiset\table\tablemodel.h" />
+    <QtMoc Include="uiframe\commonuiset\table\tablewidget.h" />
+    <QtMoc Include="uiframe\configuiset\adminlogindialog.h" />
+    <QtMoc Include="uiframe\configuiset\configdialog.h" />
+    <QtMoc Include="uiframe\configuiset\configtitlebar.h" />
+    <QtMoc Include="uiframe\configuiset\logdialog.h" />
+    <QtMoc Include="uiframe\configuiset\camsetdialog.h" />
+    <QtMoc Include="uiframe\configuiset\stereoscopicdialog.h" />
+    <QtMoc Include="uiframe\configuiset\passworddialog.h" />
+    <QtMoc Include="uiframe\mainuiset\imageviews\sixviewswidget.h" />
+    <QtMoc Include="uiframe\mainuiset\infowidget.h" />
+    <QtMoc Include="uiframe\mainuiset\resultwidget.h" />
+    <QtMoc Include="uiframe\mainuiset\datawidget.h" />
+    <QtMoc Include="uiframe\mainuiset\singleviewwidget.h" />
+    <ClInclude Include="vimocommon\applogger.h" />
+    <ClInclude Include="serializer\cppserializer.hpp" />
+    <ClInclude Include="serializer\json.hpp" />
+    <QtMoc Include="logservice\logservice.h">
+    </QtMoc>
+    <ClInclude Include="serializer\optional_json.h" />
+    <ClInclude Include="serializer\static_reflection.h" />
+    <QtMoc Include="vimocommon\vimocommon.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\release\moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -O2 -MD -std:c++17 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;.\release\moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\release\moc\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cameraservice\cameraservice.pri" />
+    <None Include="communication\communication.pri" />
+    <None Include="database\database.pri" />
+    <None Include="Flow\flow.pri" />
+    <None Include="logservice\logservice.pri" />
+    <None Include="README.md" />
+    <None Include="uiframe\images\viewstatusbar\NG.svg" />
+    <None Include="uiframe\images\viewstatusbar\OK.svg" />
+    <None Include="uiframe\uiframe.pri" />
+    <QtRcc Include="CHOWTAIFOOK_Detection.qrc">
+    </QtRcc>
+    <None Include="uiframe\images\camera_config\Success.svg" />
+    <None Include="uiframe\images\config\add.svg" />
+    <None Include="uiframe\images\ico\admin.ico" />
+    <None Include="uiframe\images\viewtoolbar\ai_image_dispaly.svg" />
+    <None Include="uiframe\images\imageview\background.png" />
+    <None Include="uiframe\images\ico\cam.ico" />
+    <None Include="uiframe\images\viewtoolbar\camera.svg" />
+    <None Include="uiframe\images\viewtoolbar\camera_active.svg" />
+    <None Include="uiframe\images\viewtoolbar\camera_disconnect.svg" />
+    <None Include="uiframe\images\config\camera_icon.svg" />
+    <None Include="uiframe\images\viewtoolbar\camera_off.svg" />
+    <None Include="uiframe\images\viewtoolbar\camera_on.svg" />
+    <None Include="uiframe\images\camera_config\catch_once.svg" />
+    <None Include="uiframe\images\camera_config\catch_once_active.svg" />
+    <None Include="uiframe\images\titlebar\ch.svg" />
+    <None Include="uiframe\images\aboutdialog\close.svg" />
+    <None Include="uiframe\images\config\close.svg" />
+    <None Include="uiframe\images\titlebar\close.svg" />
+    <None Include="uiframe\images\titlebar\config.svg" />
+    <None Include="uiframe\images\titlebar\config_disabled.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\cycle_disabled.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\cycle_run.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\cycle_stop.svg" />
+    <None Include="uiframe\images\config\delete.svg" />
+    <None Include="uiframe\images\titlebar\en.svg" />
+    <None Include="uiframe\images\config\image_source.svg" />
+    <None Include="uiframe\images\viewtoolbar\import.svg" />
+    <None Include="uiframe\images\viewstatusbar\left.svg" />
+    <None Include="uiframe\images\viewstatusbar\left_disabled.svg" />
+    <None Include="uiframe\images\ico\log.ico" />
+    <None Include="uiframe\images\logo.ico" />
+    <None Include="uiframe\images\aboutdialog\logo.svg" />
+    <None Include="uiframe\images\ico\material.ico" />
+    <None Include="uiframe\images\titlebar\max.svg" />
+    <None Include="uiframe\images\common\menu.png" />
+    <None Include="uiframe\images\titlebar\min.svg" />
+    <None Include="uiframe\images\config\model_icon.svg" />
+    <None Include="uiframe\images\config\no_selected.svg" />
+    <None Include="uiframe\images\tableview\nodata.svg" />
+    <None Include="uiframe\images\camera_config\off.svg" />
+    <None Include="uiframe\images\model_config\off.svg" />
+    <None Include="uiframe\images\camera_config\on.svg" />
+    <None Include="uiframe\images\model_config\on.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\once_disabled.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\once_run.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\once_stop.svg" />
+    <None Include="uiframe\images\ico\order.ico" />
+    <None Include="uiframe\images\ico\p.ico" />
+    <None Include="uiframe\images\camera_config\pause.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\pause.svg" />
+    <None Include="uiframe\images\operationalcontrolwidget\pause_disabled.svg" />
+    <None Include="uiframe\images\model_config\question_mark.svg" />
+    <None Include="uiframe\images\camera_config\refresh.svg" />
+    <None Include="uiframe\images\camera_config\refresh_disabled.svg" />
+    <None Include="uiframe\images\titlebar\restore.svg" />
+    <None Include="uiframe\images\viewtoolbar\restore.svg" />
+    <None Include="uiframe\images\camera_config\revert.svg" />
+    <None Include="uiframe\images\viewstatusbar\right.svg" />
+    <None Include="uiframe\images\viewstatusbar\right_disabled.svg" />
+    <None Include="uiframe\images\config\save_icon.svg" />
+    <None Include="uiframe\images\config\selected.svg" />
+    <None Include="uiframe\translations\smore_vimo_en.qm" />
+    <None Include="uiframe\translations\smore_vimo_zh-cn.qm" />
+    <None Include="uiframe\images\viewtoolbar\src_image_dispaly.svg" />
+    <None Include="uiframe\images\camera_config\start.svg" />
+    <None Include="uiframe\images\camera_config\stream.svg" />
+    <None Include="uiframe\images\camera_config\stream_active.svg" />
+    <None Include="uiframe\style\stylesheet.qss" />
+    <None Include="uiframe\images\config\sys_icon.svg" />
+    <None Include="uiframe\images\titlebar\version.svg" />
+    <None Include="uiframe\images\config\view_icon.svg" />
+    <None Include="uiframe\images\camera_config\waiting.gif" />
+    <None Include="uiframe\images\viewtoolbar\zoomin.svg" />
+    <None Include="uiframe\images\camera_config\zoomin_disabled.svg" />
+    <None Include="uiframe\images\camera_config\zoomin_enabled.svg" />
+    <None Include="uiframe\images\viewtoolbar\zoomout.svg" />
+    <None Include="uiframe\images\camera_config\zoomout_disabled.svg" />
+    <None Include="uiframe\images\camera_config\zoomout_enabled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="uiframe\commonuiset\messagedialog\messagedialog.ui" />
+    <QtUic Include="uiframe\commonuiset\messagedialog\progressbardialog.ui" />
+    <QtUic Include="uiframe\commonuiset\table\tablewidget.ui" />
+    <QtUic Include="uiframe\configuiset\adminlogindialog.ui" />
+    <QtUic Include="uiframe\configuiset\configdialog.ui" />
+    <QtUic Include="uiframe\configuiset\logdialog.ui" />
+    <QtUic Include="uiframe\configuiset\camsetdialog.ui" />
+    <QtUic Include="uiframe\configuiset\stereoscopicdialog.ui" />
+    <QtUic Include="uiframe\configuiset\passworddialog.ui" />
+    <QtUic Include="uiframe\mainuiset\aboutdialog.ui" />
+    <QtUic Include="uiframe\mainuiset\buttonwidget.ui" />
+    <QtUic Include="uiframe\mainuiset\datawidget.ui" />
+    <QtUic Include="uiframe\mainuiset\imageviews\sixviewswidget.ui" />
+    <QtUic Include="uiframe\mainuiset\imageviews\imageview.ui" />
+    <QtUic Include="uiframe\mainuiset\imageviews\viewtoolbar.ui" />
+    <QtUic Include="uiframe\mainuiset\logwidget.ui" />
+    <QtUic Include="uiframe\mainuiset\infowidget.ui" />
+    <QtUic Include="uiframe\mainuiset\mainframe.ui" />
+    <QtUic Include="uiframe\mainuiset\resultwidget.ui" />
+    <QtUic Include="uiframe\mainuiset\singleviewwidget.ui" />
+    <QtUic Include="uiframe\mainuiset\statisticswidget.ui" />
+    <QtUic Include="uiframe\mainuiset\titlebarwidget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CHOWTAIFOOK_Detection_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

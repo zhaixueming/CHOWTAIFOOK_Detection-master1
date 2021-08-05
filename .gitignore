@@ -1,0 +1,11 @@
+lib/
+include/
+build-*/
+*.pro.user
+*.orig
+/.vs
+/debug
+/release
+*log.txt
+logs
+*.pdb

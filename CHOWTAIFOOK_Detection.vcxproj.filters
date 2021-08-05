@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="uiframe\mainuiset\mainframe.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="uiframe\mainuiset\aboutdialog.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\adminlogindialog.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+    <ClCompile Include="vimocommon\applogger.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\buttonwidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\configdialog.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\configtitlebar.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+    <ClCompile Include="cameraservice\hikvisionsdk.cpp">
+      <Filter>cam</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\imagegraphics\imagegraphicsitem.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\imagegraphics\imagegraphicsscene.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\imagegraphics\imagegraphicsview.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\imageviews\imageview.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\logdialog.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+    <ClCompile Include="logservice\logservice.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\logwidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="communication\mcplc.cpp">
+      <Filter>plc</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\messagedialog\messagedialog.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\messagedialog\messagedialogtitlebar.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\passworddialog.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\messagedialog\progressbardialog.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="communication\readcode.cpp">
+      <Filter>plc</Filter>
+    </ClCompile>
+    <ClCompile Include="Flow\serialcommond.cpp">
+      <Filter>plc</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\statisticswidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="communication\stripprocessor.cpp">
+      <Filter>plc</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\table\tablemodel.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\commonuiset\table\tablewidget.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\titlebarwidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\imageviews\viewtoolbar.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="vimocommon\vimocommon.cpp">
+      <Filter>basic</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\resultwidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\infowidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\datawidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\singleviewwidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\mainuiset\imageviews\sixviewswidget.cpp">
+      <Filter>Form\main</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\camsetdialog.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+    <ClCompile Include="uiframe\configuiset\stereoscopicdialog.cpp">
+      <Filter>Form\function</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="serializer\AdminConfig.h">
+      <Filter>Form\function</Filter>
+    </ClInclude>
+    <ClInclude Include="vimocommon\applogger.h">
+      <Filter>basic</Filter>
+    </ClInclude>
+    <ClInclude Include="serializer\Config.h">
+      <Filter>Form\function</Filter>
+    </ClInclude>
+    <ClInclude Include="serializer\cppserializer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="uiframe\commonuiset\imagegraphics\imagegraphicsitem.h">
+      <Filter>basic</Filter>
+    </ClInclude>
+    <ClInclude Include="uiframe\commonuiset\imagegraphics\imagegraphicsscene.h">
+      <Filter>basic</Filter>
+    </ClInclude>
+    <ClInclude Include="serializer\json.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="serializer\optional_json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="serializer\static_reflection.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="uiframe\commonuiset\table\tablemodel.h">
+      <Filter>basic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="uiframe\mainuiset\mainframe.h" />
+    <QtMoc Include="uiframe\mainuiset\aboutdialog.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\adminlogindialog.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\buttonwidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\configdialog.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\configtitlebar.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+    <QtMoc Include="cameraservice\hikvisionsdk.h">
+      <Filter>cam</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\commonuiset\imagegraphics\imagegraphicsview.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\imageviews\imageview.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\logdialog.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+    <QtMoc Include="logservice\logservice.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\logwidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="communication\mcplc.h">
+      <Filter>plc</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\commonuiset\messagedialog\messagedialog.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\commonuiset\messagedialog\messagedialogtitlebar.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\passworddialog.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\commonuiset\messagedialog\progressbardialog.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="communication\readcode.h">
+      <Filter>plc</Filter>
+    </QtMoc>
+    <QtMoc Include="Flow\serialcommond.h">
+      <Filter>plc</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\statisticswidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="communication\stripprocessor.h">
+      <Filter>plc</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\commonuiset\table\tablewidget.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\titlebarwidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\imageviews\viewtoolbar.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="vimocommon\vimocommon.h">
+      <Filter>basic</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\resultwidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\infowidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\datawidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\singleviewwidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\mainuiset\imageviews\sixviewswidget.h">
+      <Filter>Form\main</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\camsetdialog.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+    <QtMoc Include="uiframe\configuiset\stereoscopicdialog.h">
+      <Filter>Form\function</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="uiframe\mainuiset\aboutdialog.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\configuiset\adminlogindialog.ui">
+      <Filter>Form\function</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\buttonwidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\configuiset\configdialog.ui">
+      <Filter>Form\function</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\imageviews\imageview.ui">
+      <Filter>basic</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\configuiset\logdialog.ui">
+      <Filter>Form\function</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\logwidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\mainframe.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\commonuiset\messagedialog\messagedialog.ui">
+      <Filter>basic</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\configuiset\passworddialog.ui">
+      <Filter>Form\function</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\commonuiset\messagedialog\progressbardialog.ui">
+      <Filter>basic</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\statisticswidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\commonuiset\table\tablewidget.ui">
+      <Filter>basic</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\titlebarwidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\imageviews\viewtoolbar.ui">
+      <Filter>basic</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\resultwidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\infowidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\datawidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\singleviewwidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\mainuiset\imageviews\sixviewswidget.ui">
+      <Filter>Form\main</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\configuiset\camsetdialog.ui">
+      <Filter>Form\function</Filter>
+    </QtUic>
+    <QtUic Include="uiframe\configuiset\stereoscopicdialog.ui">
+      <Filter>Form\function</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="uiframe\images\config\add.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\ico\admin.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\ai_image_dispaly.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\imageview\background.png">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\ico\cam.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\camera.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\camera_active.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\camera_disconnect.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\camera_off.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\camera_icon.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\camera_on.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="cameraservice\cameraservice.pri">
+      <Filter>pri</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\catch_once.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\catch_once_active.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\ch.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\close.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\aboutdialog\close.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\close.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="communication\communication.pri">
+      <Filter>pri</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\config.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\config_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\cycle_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\cycle_run.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\cycle_stop.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="database\database.pri">
+      <Filter>pri</Filter>
+    </None>
+    <None Include="uiframe\images\config\delete.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\en.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="Flow\flow.pri">
+      <Filter>pri</Filter>
+    </None>
+    <None Include="uiframe\images\config\image_source.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\import.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewstatusbar\left.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewstatusbar\left_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\ico\log.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\aboutdialog\logo.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\logo.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="logservice\logservice.pri">
+      <Filter>pri</Filter>
+    </None>
+    <None Include="uiframe\images\ico\material.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\max.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\common\menu.png">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\min.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\model_icon.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewstatusbar\NG.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\no_selected.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\tableview\nodata.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\model_config\off.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\off.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewstatusbar\OK.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\model_config\on.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\on.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\once_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\once_run.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\once_stop.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\ico\order.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\ico\p.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\pause.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\pause.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\operationalcontrolwidget\pause_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\model_config\question_mark.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\refresh.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\refresh_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\restore.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\restore.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\revert.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewstatusbar\right.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewstatusbar\right_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\save_icon.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\selected.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\translations\smore_vimo_en.qm">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\translations\smore_vimo_zh-cn.qm">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\src_image_dispaly.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\start.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\stream.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\stream_active.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\Success.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\style\stylesheet.qss">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\sys_icon.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\uiframe.pri">
+      <Filter>pri</Filter>
+    </None>
+    <None Include="uiframe\images\titlebar\version.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\config\view_icon.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\zoomin.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\zoomin_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\zoomin_enabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\viewtoolbar\zoomout.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\zoomout_disabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\zoomout_enabled.svg">
+      <Filter>other</Filter>
+    </None>
+    <None Include="uiframe\images\camera_config\waiting.gif">
+      <Filter>other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Form">
+      <UniqueIdentifier>{52ed0ea9-1485-4503-bc16-d4a761caeaac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{ded3c119-f67f-463f-bfc4-e01056e5cd2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="basic">
+      <UniqueIdentifier>{577cf9cc-ba5d-48e9-b9d6-04c13702da87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\main">
+      <UniqueIdentifier>{2b7c7c8d-ef8f-4869-a87f-494961c97882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\function">
+      <UniqueIdentifier>{9bbfaf5d-a4f6-47ca-a5db-1cf0e3bf1747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pri">
+      <UniqueIdentifier>{94c90032-a37c-4ea6-b088-fc4e04f498fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{ec0fd365-59bf-45a7-adf5-8112166e22e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cam">
+      <UniqueIdentifier>{f587bcb7-fbf3-4852-b097-75798c37db5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plc">
+      <UniqueIdentifier>{1701d227-5738-474b-bc8d-47938ddbd268}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="CHOWTAIFOOK_Detection.qrc">
+      <Filter>pri</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CHOWTAIFOOK_Detection_resource.rc">
+      <Filter>pri</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\release\moc\moc_predefs.h.cbt">
+      <Filter>other</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StereoscopicDialog</class>
+ <widget class="QDialog" name="StereoscopicDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1140</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QWidget" name="mainWidget" native="true">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QPushButton" name="ButtonSave">
+         <property name="geometry">
+          <rect>
+           <x>545</x>
+           <y>407</y>
+           <width>80</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>34</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>34</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #006db2;
+border-radius: 4px;
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>保存</string>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButtonCancel">
+         <property name="geometry">
+          <rect>
+           <x>696</x>
+           <y>407</y>
+           <width>80</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>34</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>34</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: white;
+border: 1px solid rgba(0,0,0,0.3);
+border-radius: 4px;
+color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>取消</string>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>453</x>
+           <y>145</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_scratchSmallB">
+         <property name="geometry">
+          <rect>
+           <x>329</x>
+           <y>150</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_53">
+         <property name="geometry">
+          <rect>
+           <x>62</x>
+           <y>145</y>
+           <width>81</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面(细)</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_54">
+         <property name="geometry">
+          <rect>
+           <x>273</x>
+           <y>145</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_scratchSmallA">
+         <property name="geometry">
+          <rect>
+           <x>149</x>
+           <y>150</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>不允许</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_scratchSmallC">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>150</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_55">
+         <property name="geometry">
+          <rect>
+           <x>638</x>
+           <y>145</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_36">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>150</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>25</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>压伤检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>97</x>
+           <y>21</y>
+           <width>51</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pressA">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>21</y>
+           <width>125</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>S&lt;=0.10mm^2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>25</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pressB">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>30</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>S&lt;=0.20mm^2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>458</x>
+           <y>25</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pressC">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>30</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>S&lt;=0.40mm^2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>25</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_4">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>30</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>72</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>碰伤检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>96</x>
+           <y>72</y>
+           <width>52</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_bumpsA">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>77</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>S&lt;=0.08mm^2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>72</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_bumpsB">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>77</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>S&lt;=0.10mm^2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>458</x>
+           <y>72</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_bumpsC">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>77</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>S&lt;=0.40mm^2</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>72</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_8">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>77</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>119</y>
+           <width>80</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>划伤检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_31">
+         <property name="geometry">
+          <rect>
+           <x>67</x>
+           <y>119</y>
+           <width>81</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面(硬)</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_scratchHardA">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>124</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string>不允许</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>119</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_scratchHardB">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>124</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_30">
+         <property name="geometry">
+          <rect>
+           <x>458</x>
+           <y>119</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_scratchHardC">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>124</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_29">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>119</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_12">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>124</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>8</x>
+           <y>185</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>擦伤检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>94</x>
+           <y>185</y>
+           <width>52</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_brushA">
+         <property name="geometry">
+          <rect>
+           <x>152</x>
+           <y>190</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>276</x>
+           <y>185</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_brushB">
+         <property name="geometry">
+          <rect>
+           <x>332</x>
+           <y>190</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>456</x>
+           <y>185</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_brushC">
+         <property name="geometry">
+          <rect>
+           <x>513</x>
+           <y>190</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_43">
+         <property name="geometry">
+          <rect>
+           <x>638</x>
+           <y>185</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_13">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>190</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>213</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>爆模检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>96</x>
+           <y>213</y>
+           <width>52</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>TP面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_baomoTP">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>218</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>213</y>
+           <width>101</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>侧面&amp;BP面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_baomoBP">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>220</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_14">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>218</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>213</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_23">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>218</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>麻点检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>96</x>
+           <y>260</y>
+           <width>52</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pockA">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>265</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>260</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pockB">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>265</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>458</x>
+           <y>260</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pockC">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>265</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_42">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>260</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_19">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>265</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>307</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>脏污检验：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_44">
+         <property name="geometry">
+          <rect>
+           <x>96</x>
+           <y>307</y>
+           <width>52</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_dirty">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>312</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>307</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_28">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>312</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_47">
+         <property name="geometry">
+          <rect>
+           <x>458</x>
+           <y>307</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_26">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>312</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_46">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>307</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_25">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>312</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>354</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.6);</string>
+         </property>
+         <property name="text">
+          <string>幻影划伤：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_48">
+         <property name="geometry">
+          <rect>
+           <x>96</x>
+           <y>354</y>
+           <width>52</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>A级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_mirageA">
+         <property name="geometry">
+          <rect>
+           <x>154</x>
+           <y>359</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_49">
+         <property name="geometry">
+          <rect>
+           <x>278</x>
+           <y>354</y>
+           <width>50</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>B级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_mirageB">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>359</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_51">
+         <property name="geometry">
+          <rect>
+           <x>458</x>
+           <y>354</y>
+           <width>51</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>C级面</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_mirageC">
+         <property name="geometry">
+          <rect>
+           <x>515</x>
+           <y>359</y>
+           <width>119</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_50">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>354</y>
+           <width>76</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>减速时间</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditLFrontlight1o_29">
+         <property name="geometry">
+          <rect>
+           <x>722</x>
+           <y>359</y>
+           <width>118</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #f7f9fa;
+border-radius: 4px;
+padding-left: 2px;
+font-size: 14px;
+color: rgba(0,0,0,0.8);</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QWidget" name="titlebar" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="titlebar_layout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../CHOWTAIFOOK_Detection.qrc"/>
+ </resources>
+ <connections/>
+</ui>
